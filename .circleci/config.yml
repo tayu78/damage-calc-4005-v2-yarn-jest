@@ -23,8 +23,8 @@ jobs:
         
       - run: yarn test
       - run:
-        name: Install JUnit coverage reporter
-        command: yarn add --dev jest-junit
+          name: Install JUnit coverage reporter
+          command: yarn add --dev jest-junit
       - run:
           name: Run tests with JUnit as reporter
           command: npx jest --ci --runInBand --reporters=default --reporters=jest-junit
